@@ -1,4 +1,4 @@
-package org.openjfx.view;
+package view;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -22,6 +22,18 @@ public class MainView extends VBox {
         locationButton = new Button("Obtenir Coordonnées GPS");
 
         getChildren().addAll(recordButton, cameraButton, locationButton);
+    }
+
+    public Button getRecordButton() {
+        return recordButton;
+    }
+
+    public Button getCameraButton() {
+        return cameraButton;
+    }
+
+    public Button getLocationButton() {
+        return locationButton;
     }
 
     public void setRecordButtonAction(EventHandler<ActionEvent> handler) {

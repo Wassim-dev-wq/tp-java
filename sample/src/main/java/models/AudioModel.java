@@ -1,4 +1,4 @@
-package org.openjfx.models;
+package models;
 
 import javax.sound.sampled.*;
 import java.io.File;

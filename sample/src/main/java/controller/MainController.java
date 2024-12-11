@@ -1,10 +1,11 @@
-package org.openjfx.controller;
+package controller;
 
+import com.github.sarxos.webcam.Webcam;
 import javafx.application.Platform;
-import org.openjfx.models.AudioModel;
-import org.openjfx.models.CameraModel;
-import org.openjfx.models.LocationModel;
-import org.openjfx.view.MainView;
+import models.AudioModel;
+import models.CameraModel;
+import models.LocationModel;
+import view.MainView;
 
 public class MainController {
     private final AudioModel audioModel;
@@ -14,7 +15,7 @@ public class MainController {
 
     public MainController(MainView view) {
         this.audioModel = new AudioModel();
-        this.cameraModel = new CameraModel();
+        this.cameraModel = new CameraModel(Webcam.getDefault());
         this.locationModel = new LocationModel();
         this.view = view;
 

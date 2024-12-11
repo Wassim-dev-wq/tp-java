@@ -1,4 +1,4 @@
-package org.openjfx.models;
+package models;
 
 import com.github.sarxos.webcam.Webcam;
 import javax.imageio.ImageIO;
@@ -7,10 +7,9 @@ import java.io.File;
 public class CameraModel {
     private final Webcam webcam;
 
-    public CameraModel() {
-        this.webcam = Webcam.getDefault();
+    public CameraModel(Webcam webcam) {
+        this.webcam = webcam != null ? webcam : Webcam.getDefault();
     }
-
     public void capturePhoto() throws Exception {
         if (!webcam.isOpen()) {
             webcam.open();

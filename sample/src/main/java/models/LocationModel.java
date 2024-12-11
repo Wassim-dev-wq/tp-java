@@ -1,8 +1,5 @@
-package org.openjfx.models;
+package models;
 
-import org.geotools.geometry.jts.JTSFactoryFinder;
-import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.Point;
 import java.net.URL;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

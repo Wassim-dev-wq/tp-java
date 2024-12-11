@@ -1,10 +1,8 @@
-package org.openjfx;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.openjfx.controller.MainController;
-import org.openjfx.view.MainView;
+import controller.MainController;
+import view.MainView;
 
 /**
  * JavaFX App

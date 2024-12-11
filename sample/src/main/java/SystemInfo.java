@@ -1,5 +1,3 @@
-package org.openjfx;
-
 public class SystemInfo {
 
     public static String javaVersion() {
